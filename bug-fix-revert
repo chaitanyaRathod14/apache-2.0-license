@@ -1,10 +1,11 @@
-$pr = curl.exe -sS -L "https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11718" | ConvertFrom-Json; [pscustomobject]@{ number = $pr.number; html_url = $pr.html_url; title = $pr.title; state = $pr.state; head_repo = $pr.head.repo.full_name; head_ref = $pr.head.ref; base_repo = $pr.base.repo.full_name; base_ref = $pr.base.ref } | ConvertTo-Json
+$pr = curl.exe -sS -L "https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11718" | ConvertFrom-Json; [pscustomobject]@{ number = $pr.number; html_url = $pr.html_url; title = $pr.title; state = $pr.state; head_repo = $pr.head.repo.full_name; head_repo_fork = $pr.head.repo.fork; head_ref = $pr.head.ref; base_repo = $pr.base.repo.full_name; base_ref = $pr.base.ref } | ConvertTo-Json
 {
     "number":  11718,
     "html_url":  "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/11718",
     "title":  "Fix typo",
     "state":  "closed",
     "head_repo":  "chaitanyaRathod14/mcino-Introduction-to-Git-and-GitHub",
+    "head_repo_fork":  true,
     "head_ref":  "bug-fix-typo",
     "base_repo":  "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
     "base_ref":  "main"
