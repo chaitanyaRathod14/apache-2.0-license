@@ -1,0 +1,4 @@
+git branch -vv
+  bug-fix-pr   c68e195 [upstream/main: ahead 1] Fix typo
+  bug-fix-typo fd398fa Fix typo
+* main         3260dd2 [origin/main] Add pull request verification
